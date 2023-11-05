@@ -1,7 +1,9 @@
 package shop.example.shop.model;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.SessionScope;
 
+@SessionScope
 @Service
 public class Client {
     private String firstName;

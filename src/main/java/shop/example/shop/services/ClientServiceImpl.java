@@ -8,7 +8,7 @@ import java.util.List;
 
 @Service
 public class ClientServiceImpl implements ClientService{
-    @Autowired
+
     private final Client client;
 
     public ClientServiceImpl(Client client) {
@@ -24,5 +24,8 @@ public class ClientServiceImpl implements ClientService{
 
     public Client getClient() {
         return client;
+    }
+    public List<Integer> getBasket() {
+        return client.getBasket().getList();
     }
 }
